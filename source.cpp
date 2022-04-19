@@ -18,17 +18,16 @@ int main(int argc, char **argv) {
 /////////////////////////////////////////////////////////////
 double foo(double a, double b) {
 
-  double val=0;
+  double val = 0;
 
-  if (a == 0 || b == 0 || 2*a == b){
+  if (a == 0 || b == 0 || 2 * a == b) {
 
     val = 0;
   }
 
-  else{
+  else {
 
-    val=(a/b) + (b/bar(a,b)) + (b/a);
-
+    val = (a / b) + (b / bar(a, b)) + (b / a);
   }
 
   return val;
@@ -42,4 +41,5 @@ double bar(double a, double b) {
 double baz(double x) {
 
   return std::sqrt(x);
+
 }
